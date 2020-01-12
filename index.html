@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editeur Matrice</title>
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#main table {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		#main table tr td {
+			width: 60px;
+			height: 60px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<form>
+		<input type="color" id="colorpicker" tabindex=-1 class="hidden">
+		<input name="y" type="number" value="6" step="1" min="1" max="1000"  placeholder="Nombre de lignes"/>
+		<input name="x" type="number" value="10" step="1" min="1" max="1000" placeholder="Nombre de colonnes" />
+		<input id="generateAction" type="button" value="Générer" />
+		<input id="applyToAll" type="button" value="Appliquer la couleur a toute la grille" />
+	</form>
+
+	<div id="main">
+		<table id="table">
+		</table>
+	</div>
+
+
+
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
